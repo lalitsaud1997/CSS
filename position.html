@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position relative</title>
+    <style>
+        body{
+            height: 1900px;
+        }
+        .main{background: green;
+            width: 400px;height:350px;
+            margin: 80px auto ;position: relative;border-radius: 50%;}
+        .top{width: 50px;height: 50px;
+                background: red;position: absolute;
+                left: 170px;top:-30px;}
+        .right{width: 50px;height: 50px;
+                background: red;position: absolute;
+                top: 170px;right:-30px;}
+        .buttom{width: 50px;height: 50px;
+                background: red;position: absolute;
+                right: 170px;bottom:-30px;display: none;}
+        .left{width: 50px;height: 50px;
+                background: red;position: absolute;
+                top: 170px;left:-30px;}
+        .aa{background: green;
+            width: 400px;height:350px;
+            margin: 80px auto ;position: relative;border-radius: 50%;}
+        .main:hover .buttom{display: block;}
+
+        .main2{background: green;
+            width: 400px;height:350px;
+            margin: 80px auto ;position: relative;}
+            .a{position: absolute;width: 40px;height: 40px;background: yellow;z-index:4;}
+            .b{position: absolute;width: 40px;height: 40px;background: red;left: 8px;top: 8px;z-index: 2;}
+            .main2circle{width: 200px;height: 200px;background: red;border-radius: 100px;position: absolute;top:100px;left: 100px;}
+            .stykeexample{position: sticky;top: 200px;}
+
+
+
+
+    </style>
+</head>
+<body>
+   <div class="main">
+       <div class="top"></div>
+       <div class="right"></div>
+       <div class="buttom"></div>
+       <div class="left"></div>
+       <div class="aa"></div>
+   </div>
+
+   <div class="stykeexample">
+
+   <div class="main2">
+       <div class="a"></div>
+       <div class="b"></div>
+       <div class="main2circle"></div>
+   </div>
+</div>
+   
+    
+</body>
+</html>
