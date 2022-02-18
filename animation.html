@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes lorien{
+            from{background: hotpink;}
+            30%{background: rebeccapurple;}
+            to{background: rgb(101, 228, 16);}
+        }
+        .box{
+            width: 200px;height:200px;background: green;
+            animation-name: lorien;animation-duration:4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes lalit{
+            0%{top: 208px;left:0;}
+            25%{top: 208px;left: 80%;}
+            50%{top: 60%;left: 80%;}
+            75%{top: 60%;left: 0%;}
+            100%{top: 208px;left: 0%;}
+        }
+        .bb{
+            width: 120px;height: 120px;background: rebeccapurple;position: absolute;
+            animation-name: lalit;animation-duration: 2s;margin-top: 4px;
+            animation-iteration-count: infinite;
+        }
+        @keyframes lll{
+            100%{transform: rotate(360deg);}
+
+        }
+        .aa{width: 60px;height: 60px;background: rgb(192, 15, 15);animation-name: lll;
+            animation-duration: 3s;animation-iteration-count: infinite;
+            animation-timing-function: linear;position: absolute;top: 350px;left: 50%;
+            }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="bb"></div>
+    <div class="aa"></div>
+</body>
+</html>
