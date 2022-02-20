@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0px;padding: 0px;box-sizing: border-box;}
+        nav{margin:80px;}
+        nav ul{list-style: none;}
+        nav ul li{display: inline;position: relative;}
+        nav ul li a{text-decoration: none;color: #fff;
+            background: #000;padding: 12px;}
+        nav ul li ul{position: absolute;top: 26px;left:0px;
+           display: none;}
+        nav ul li ul li{line-height: 42px;}
+        nav ul li:hover ul{display: block;}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Servicess</a>
+                <ul>
+                    <li><a href="#">Service1</a></li>
+                    <li><a href="#">Service2</a></li>
+                    <li><a href="#">Service3</a></li>
+                    <li><a href="#">Service4</a></li>
+                    <li><a href="#">Service5</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
