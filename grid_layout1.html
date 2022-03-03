@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{background: green;padding: 20px; display: grid;
+        grid-template-columns: auto auto auto  auto;
+        /*
+        grid-template-rows: 300px;  /* grid ko row ko height manage ko lagi 
+         */
+         grid-column-gap: 14px; grid-row-gap: 14px;
+        }
+        .box{
+            border: 1px solid #fff;padding: 80px;background: indigo;
+        }
+        .a{
+            grid-column-start: 1;grid-column-end:5 ;
+        }
+        .b{
+            grid-row-start: 2;grid-row-end: 4;
+        }
+        .d{grid-column-start: 3;grid-column-end:5}
+        .e{grid-column-start: 2;grid-column-end:4}
+        .h{grid-column-start: 2;grid-column-end:5}
+        .i{
+            grid-column-start: 1;grid-column-end: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+        <div class="box e">E</div>
+        <div class="box f">F</div>
+        <div class="box g">G</div>
+        <div class="box h">H</div>
+        <div class="box i">I</div>
+
+    </div>
+    
+</body>
+</html>
