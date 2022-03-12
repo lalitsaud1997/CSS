@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid_layout</title>
+    <style>
+        .con{background: green;padding:30px;display: grid;
+        grid-template-areas: 'header header header header header header' 
+                             '. nav nav nav sidebar .'
+                             '. twin twin twin1 twin1 .'
+                             'footer footer footer footer footer footer';}
+.box{border: 1px solid #000;padding: 80px;}
+        .h{grid-area: header;}
+        .n{grid-area: nav;}
+        .s{grid-area: sidebar;}
+        .t{grid-area: twin;}
+        .t1{grid-area: twin1;}
+        .f{grid-area: footer;}
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box h">header</div>
+        <div class="box n">main</div>
+        <div class="box s">sidebar</div>
+        <div class="box t">twin</div>
+        <div class="box t1">twin1</div>
+        <div class="box f">footer</div>
+    </div>   
+</body>
+</html>
